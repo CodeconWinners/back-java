@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: desabafa
+  datasource:
+    url: jdbc:postgresql://aws-0-sa-east-1.pooler.supabase.com:5432/postgres?user=USER_NAME&password=passwordKey
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+    show-sql: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        temp:
+          use_jdbc_metadata_defaults: false
+
+calendar:
+  api:
+    base-url: https://fa-google-integration.azurewebsites.net
+
